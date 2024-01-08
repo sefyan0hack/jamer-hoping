@@ -16,8 +16,10 @@ linkedin " https://www.linkedin.com/in/kritos-yt-090a22273/
 import json
 import time
 import subprocess
-bssid = 'B0:0A:D5:40:CF:3E'#'BC:2E:F6:60:31:97'
-card = "wlan1"
+#hir the bssid of target
+bssid = 'FF:FF:FF:FF:FF:FF'
+# hir name of wireless card suport monitor mode `no need to put it to monitor mode tool dose that`
+card = "wlan0"
 def prepear():
     subprocess.run(['rfkill','unblock','wifi'])
     subprocess.run(['rfkill','unblock','all'])
